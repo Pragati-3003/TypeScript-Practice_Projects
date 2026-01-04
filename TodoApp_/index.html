@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo App</title>
+</head>
+
+<body style="
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+">
+
+  <div style="
+    background:#fff;
+    width:350px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  ">
+    <h2 style="text-align:center; margin-bottom:20px;">📝 Todo App</h2>
+
+    <div style="display:flex; gap:10px;">
+      <input id="todoInput" type="text" placeholder="Enter a task..."
+        style="flex:1; padding:10px; border-radius:6px; border:1px solid #ccc;" />
+
+      <button id="addBtn"
+        style="padding:10px 15px; background:#667eea; color:white; border:none; border-radius:6px;">
+        Add
+      </button>
+    </div>
+
+    <ul id="todoList" style="list-style:none; padding:0; margin-top:20px;"></ul>
+  </div>
+
+  <script src="./dist/index.js"></script>
+</body>
+</html>
